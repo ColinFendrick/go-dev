@@ -4,8 +4,11 @@ import (
 	"fmt"
 )
 
+// Can declare with var outside of functions
 var a string
-var b = "string b"
+var b = `string
+b`
+var c bool // This is allocated to zero-value
 
 func main() {
 	// func Printf(format string, a ...interface{}) (n int, err error)
@@ -17,4 +20,5 @@ func main() {
 	a = "string a"
 	fmt.Println(a)
 	fmt.Println(b)
+	fmt.Println(c)
 }
